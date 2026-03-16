@@ -8,8 +8,7 @@ if(isset($_POST['submit']))
         $Faculty = $_POST['faculty'];
         $gender = $_POST['gender'];
 
-
-
+        if(preg_match())
         echo "<div style = 'background:#ffffff;padding:20px;border-radius:8px;text-align:center;margin-bottom:24px;margin-right:20px;'>";
         echo "<h3> Student Details </h3>";
         echo "Name: ".$name."<br>";
@@ -69,6 +68,9 @@ if(isset($_POST['submit']))
             padding: 8px;
             margin: 8px 0px;
             font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid black;
+            outline: none;
 
         }
         button{
