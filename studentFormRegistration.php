@@ -4,19 +4,23 @@ if(isset($_POST['submit']))
         $name = $_POST['name'];
         $DOB = $_POST['DOB'];
         $mobilenumber = $_POST['mobilenumber'];
-        $Address = $_POST['Address'];
+        $Email = $_POST['email'];
         $Faculty = $_POST['faculty'];
         $gender = $_POST['gender'];
+
+
 
         echo "<div style = 'background:#ffffff;padding:20px;border-radius:8px;text-align:center;margin-bottom:24px;margin-right:20px;'>";
         echo "<h3> Student Details </h3>";
         echo "Name: ".$name."<br>";
         echo "Date of birth: ".$DOB."<br>";
         echo "Mobile Number: ".$mobilenumber."<br>";
-        echo "Address: ".$Address."<br>";
+        echo "Email: ".Email."<br>";
         echo "Faculty:".$Faculty."<br>";
         echo "Gender: ".$gender."<br>";
         echo "</div>";
+
+
 
 
     }
@@ -100,8 +104,8 @@ if(isset($_POST['submit']))
  <input type="date" name="DOB" placeholder="Enter your date of birth">
  <label for="mobilenumber">Mobile No:</label>
  <input type="tel" name="mobilenumber"  pattern="[0-9]{10}" required>
- <label for="address" >Address:</label>
- <input type="text" name="Address" id= "address" placeholder="Enter your address">
+ <label for="email" >Email:</label>
+ <input type="email" name="Email" id= "address" placeholder="Enter your email">
  <label for="faculty" name="faculty">Faculty:</label>
  <select name="faculty" id="faculty" required>
     <option value="">Select your faculty</option>
